@@ -58,7 +58,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   onPressed: () {
                     // Add login logic here
-                    print("Hi Rajan");
+                    Navigator.pushNamed(context, '/home');
                   },
                 ),
               ],

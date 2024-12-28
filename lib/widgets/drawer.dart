@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
+  const MyDrawer({super.key}); // Add constructor with key parameter
+
   @override
   Widget build(BuildContext context) {
     return Drawer(

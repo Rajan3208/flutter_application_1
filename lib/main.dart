@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // Removes the debug banner
+      debugShowCheckedModeBanner: false, 
       theme: ThemeData(
         primarySwatch: Colors.purple,
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => Homepage(),
         "/home": (context) => Homepage(), // Fixed class name
         "/login": (context) => LoginPage(),
       },

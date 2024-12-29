@@ -1,3 +1,11 @@
+class CatalogModel{
+  static final items=[
+    Item(id: 1, name: "Dress", desc: "A Dress", price: 20, color: "Red",
+    image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR8b9bjctR13SeVcIERwwtmDOrLiQ1oIlwvVBgS7PxOUy9RHrIbYxDNp5_NmBUqPJ1oUsCYqUY74lxCZSBWDdtK7c4LCfTR_a-_pcisHuPvqSViTEKEqnK8jA"),
+    Item(id: 2, name: "T-Shirt", desc: "A T-Shirt", price: 10, color: "Blue", 
+    image: "https://veirdo.in/cdn/shop/files/Artboard8.png?v=1724158576"),
+  ];
+}
 class Item{
   final int id;
   final String name;

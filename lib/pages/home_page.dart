@@ -1,5 +1,7 @@
+// Homepage.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/drawer.dart';
+import 'package:flutter_application_1/widgets/item_widgets.dart';
 
 class Homepage extends StatelessWidget {
   @override
@@ -21,10 +23,12 @@ class Homepage extends StatelessWidget {
             ),
           ),
         ),
-        body: Center(
-          child: Container(
-            child: Text("$name's net worth is $price crore"),
-          ),
+        body: ListView.builder(
+          itemCount: CatalogModel.items.length,
+          itemBuilder: (context, index) {
+            return ItemWidget(item: CatalogModel.items[index],
+            );
+          },
         ),
         drawer: const MyDrawer(),
       ),
